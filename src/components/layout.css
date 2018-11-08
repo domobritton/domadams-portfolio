@@ -764,12 +764,23 @@ pre tt:after {
   color: #8d8d8d;
 }
 
-.social-links .fab, .portfolio-links .fab, .fas {
+.social-links a, .portfolio-links a {
   margin-right: 1rem;
   color: #8d8d8d;
 }
 
-.social-links .fab:hover, .portfolio-links .fab:hover {
+.social-links svg {
+  width: 35px;
+  height: 35px;
+}
+
+.contact-form svg {
+  color: #ef4135;
+  width: 22px;
+  height: 22px;
+}
+
+.social-links a:hover, .portfolio-links a:hover {
   color: #ef4135;
 }
 
@@ -820,12 +831,14 @@ pre tt:after {
   margin-left: 1rem;
 }
 
-.contact-form em, .contact-form .fa {
+.contact-form em {
   color: #ef4135;
   margin-right: 5px;
+  font-size: 25px;
 }
 
 p.effect-shine {
+  color: #ffffff;
   -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .95) 30%, #000 50%, rgba(0, 0, 0, .95) 70%);
   mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .95) 30%, #000 50%, rgba(0, 0, 0, .95) 70%);
   -webkit-mask-size: 200%;

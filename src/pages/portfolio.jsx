@@ -6,13 +6,14 @@ import Resilient from "../images/resilient.gif";
 import Seismic from "../images/seismic.gif";
 import Silent from "../images/silentdisco.gif";
 import Layout from "../components/layout";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 const portfolioPage = () => (
   <Layout>
     <h2>Portfolio</h2>
     <div className="portfolio">
       <div className="left">
-        <img src={Intrst} />
+        <img src={Intrst} alt="Intrst"/>
         <p>
           Formulated an algorithm that displays a masonry grid of images, that
           resizes and reduces displayed columns dynamically Designed an infinite
@@ -27,17 +28,17 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>
         </div>
-        <img src={Silent} />
+        <img src={Silent} alt="Silent Storm"/>
         <p>
           Silent Storm Sound System is a leading wireless headset provider known
           for creating unique silent disco experiences across America. I built
@@ -48,17 +49,17 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>
         </div>
-        <img src={NeueWeather} />
+        <img src={NeueWeather} alt="NeueWeather"/>
         <p>
           Implemented Pusher, an API normally used for messaging apps to handle
           updates to weather data from Dark Sky API in real-time Designed an
@@ -71,19 +72,19 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>
         </div>
       </div>
       <div className="right">
-        <img src={Seismic} />
+        <img src={Seismic} alt="Seismic Powered Clothing"/>
         <p>
           Worked closely with the VP of Design and VP of Product to design a new
           website for their robotic clothing company, focusing on a clean and
@@ -96,17 +97,17 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>
         </div>
-        <img src={Resilient} />
+        <img src={Resilient} alt="Resilient Leadership"/>
         <p>
           This client came to me looking for a new website that would be easy to
           maintain with the ability to easily add blogging capabilities at a
@@ -116,17 +117,17 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>
         </div>
-        <img src={Crushd} />
+        <img src={Crushd} alt="Crush'd Dating"/>
         <p>
           Utilized Firebase to store compressed video files in the cloud and
           lazy loading on the client-side to reduce latency
@@ -135,12 +136,12 @@ const portfolioPage = () => (
           <ul>
             <li>
               <a href="" target="_blank">
-                <i className="fas fab fa-link fa-lg" />
+                <FaLink />
               </a>
             </li>
             <li>
               <a href="" target="_blank">
-                <i className="fab fa-github fa-lg" />
+                <FaGithub />
               </a>
             </li>
           </ul>

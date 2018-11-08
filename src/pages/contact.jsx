@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import { FaPhone } from "react-icons/fa";
 
 const contactPage = () => (
     <Layout>
@@ -14,7 +15,7 @@ const contactPage = () => (
           <em>@</em> dom@domadams.me
         </p>
         <p>
-          <i className="fa fa-phone" /> 415.686.9140
+          <FaPhone /> 415.686.9140
         </p>
       </div>
     </Layout>
