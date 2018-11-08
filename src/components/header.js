@@ -1,45 +1,36 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import {
+  FaHome, FaUser, FaCog, FaEye, FaEnvelope
+} from "react-icons/fa";
 
 const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: '#181818',
-      marginBottom: '1.45rem',
-    }}
-  >
+  <div className="header">
     <div
       style={{
         margin: '0 auto',
         maxWidth: 960,
-        padding: '.50rem 1.0875rem',
+        height: 50,
+        padding: '0rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: '#ef4135',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-        <ul style={{float: 'right'}}>
-        <li style={{marginRight: '1.5rem'}}>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/about'>About Me</Link>
+        <ul className="nav">
+        <li>
+          <Link to='/'><FaHome /> </Link>
         </li>
-        <li style={{marginRight: '1.5rem'}}>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/skills'>Skills</Link>
+        <li>
+          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/about'><FaUser /></Link>
         </li>
-        <li style = {{marginRight: '1.5rem'}}>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/portfolio'>Portfolio</Link> 
+        <li>
+          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/skills'><FaCog /></Link>
+        </li>
+        <li>
+          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/portfolio'><FaEye /></Link> 
           </li>
-          <li style={{marginRight: '1.5rem'}}>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/contact'>Contact Me</Link>
+          <li>
+          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/contact'><FaEnvelope /></Link>
           </li>
         </ul>
-      </h1>
     </div>
   </div>
 )
