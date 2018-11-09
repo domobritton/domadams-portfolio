@@ -6,33 +6,27 @@ import {
 
 const Header = ({ siteTitle }) => (
   <div className="header">
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        height: 50,
-        padding: '0rem 1.0875rem',
-      }}
-    >
-        <ul className="nav">
-        <li>
-          <Link to='/'><FaHome /> </Link>
-        </li>
-        <li>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/about'><FaUser /></Link>
-        </li>
-        <li>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/skills'><FaCog /></Link>
-        </li>
-        <li>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/portfolio'><FaEye /></Link> 
+    <div className="inner-header">
+          <ul className="nav">
+          <li id="home-link"
+          data-hover="Home" >
+            <Link to='/'><FaHome /></Link>
           </li>
-          <li>
-          <Link style={{color: '#ef4135', fontSize: '1rem'}} to='/contact'><FaEnvelope /></Link>
+          <li data-hover="About">
+            <Link to='/about'><FaUser /></Link>
           </li>
-        </ul>
+          <li data-hover="Skills">
+            <Link to='/skills'><FaCog /></Link>
+          </li>
+          <li data-hover="Work">
+            <Link to='/portfolio'><FaEye /></Link> 
+            </li>
+            <li data-hover="Email">
+            <Link to='/contact'><FaEnvelope /></Link>
+            </li>
+          </ul>
+        </div>
     </div>
-  </div>
 )
 
 export default Header
