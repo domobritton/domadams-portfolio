@@ -51,6 +51,12 @@ const IndexPage = () => (
           <Link to="/contact">Contact Me</Link>
         </div>
       </div>
+      <div className="right-arrows-container">
+        <Link to="/about">
+          <div className="right-arrow right-arrow-one" />
+          <div className="right-arrow right-arrow-two" />
+        </Link>
+      </div>
     </Layout>
   </PageTransition>
 );

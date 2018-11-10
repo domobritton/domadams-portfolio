@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Intrst from "../images/intrst.gif"
 import Crushd from "../images/crushd.gif"
 import NeueWeather from "../images/neueweather.gif"
@@ -25,6 +26,12 @@ const portfolioPage = () => (
     transitionTime={500}
   >
   <Layout>
+      <div className="arrows-container">
+        <div className="arrow arrow-one">
+        </div>
+        <div className="arrow arrow-two">
+        </div>
+      </div>
     <div className="scroll">
       <h2>Portfolio</h2>
       <div className="portfolio">
@@ -156,6 +163,12 @@ const portfolioPage = () => (
         </div>
       </div>
     </div>
+      <div className="right-arrows-container">
+        <Link to="/contact">
+          <div className="right-arrow right-arrow-one" />
+          <div className="right-arrow right-arrow-two" />
+        </Link>
+      </div>
   </Layout>
   </PageTransition>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby"
 import Layout from "../components/layout";
 import PageTransition from "gatsby-plugin-page-transitions";
 
@@ -73,6 +74,12 @@ const skillsPage = () => (
         </a>
       </div>
     </div>
+      <div className="right-arrows-container">
+        <Link to="/portfolio">
+          <div className="right-arrow right-arrow-one" />
+          <div className="right-arrow right-arrow-two" />
+        </Link>
+      </div>
   </Layout>
   </PageTransition>
 );

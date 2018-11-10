@@ -9,41 +9,6 @@ body {
   background: #252627;
 }
 
-/* article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-} */
-
-progress {
-  vertical-align: baseline;
-}
-
-[hidden],
-template {
-  display: none;
-}
 
 a {
   background-color: transparent;
@@ -55,50 +20,9 @@ a:hover {
   outline-width: 0;
 }
 
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
-  font-weight: bolder;
-}
-
-dfn {
-  font-style: italic;
-}
-
 h1 {
   font-size: .75em;
   margin: .67em 0;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -.25em;
-}
-
-sup {
-  top: -.5em;
 }
 
 img {
@@ -109,31 +33,6 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: Quicksand,
-  -apple-system,
-  BlinkMacSystemFont,
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  Droid Sans,
-  sans-serif;
-  font-size: 1em;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
 
 button,
 input,
@@ -231,7 +130,7 @@ textarea {
 }
 
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em Quicksand, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -282,15 +181,15 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-font-family: Quicksand,
--apple-system,
-BlinkMacSystemFont,
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-Droid Sans,
-sans-serif;
+  font-family: Quicksand,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.25rem;
@@ -327,14 +226,14 @@ h3 {
   margin-bottom: 1.45rem;
   color: inherit;
   font-family: Quicksand,
-  -apple-system,
-  BlinkMacSystemFont,
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  Droid Sans,
-  sans-serif;
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-weight: 400;
   letter-spacing: .20rem;
   text-rendering: optimizeLegibility;
@@ -353,15 +252,15 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-font-family: Quicksand,
--apple-system,
-BlinkMacSystemFont,
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-Droid Sans,
-sans-serif;
+  font-family: Quicksand,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -378,15 +277,15 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-font-family: Quicksand,
--apple-system,
-BlinkMacSystemFont,
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-Droid Sans,
-sans-serif;
+  font-family: Quicksand,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -403,30 +302,19 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-font-family: Quicksand,
--apple-system,
-BlinkMacSystemFont,
-Roboto,
-Oxygen,
-Ubuntu,
-Cantarell,
-Droid Sans,
-sans-serif;
+  font-family: Quicksand,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
   line-height: 1.1;
-}
-
-hgroup {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 
 ul {
@@ -451,6 +339,83 @@ ul {
   width: 60px;
   z-index: 99;
 }
+
+.layout {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-left: 8%;
+  padding-right: 12%;
+  border-left: 1px solid rgba(141,141,141,0.4);
+  width: 100vw;
+  height: 100vh;
+}
+
+@media all and (max-width: 640px) {
+  .layout {
+    margin: 0 auto;
+    max-width: 95%;
+    padding-bottom: 50px;
+  }
+
+  .right-arrows-container {
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .header {
+    visibility: hidden;
+  }
+
+  .right-arrows-container {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+  }
+  .layout {
+    border-left: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 860px) {
+
+  .left,
+  .right {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .right {
+    padding-top: 50px;
+  }
+
+  .right-arrows-container {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+  }
+}
+
+@media all and (min-width: 1025px) {
+
+  .arrows-container,
+  .right-arrows-container {
+    visibility: hidden;
+  }
+}
+
 
 .inner-header {
   display: flex;
@@ -496,43 +461,9 @@ ul {
   opacity: 0;
 }
 
-ol {
-  margin-left: 1.45rem;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  list-style-position: outside;
-  list-style-image: none;
-}
 
 a {
   text-decoration: none;
-}
-
-dl {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-
-dd {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 
 p {
@@ -545,83 +476,18 @@ p {
   padding-top: 0;
   margin-bottom: 1.45rem;
   font-family: Quicksand,
-  -apple-system,
-  BlinkMacSystemFont,
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  Droid Sans,
-  sans-serif;
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   font-size: 0.85rem;
   font-weight: 400;
   color: #ffffff;
-}
-
-figure {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-
-pre {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 0.85rem;
-  line-height: 1.42;
-  background: hsla(0, 0%, 0%, 0.04);
-  border-radius: 3px;
-  overflow: auto;
-  word-wrap: normal;
-  padding: 1.45rem;
-}
-
-table {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  font-size: 1rem;
-  line-height: 1.45rem;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-fieldset {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-
-blockquote {
-  margin-left: 1.45rem;
-  margin-right: 1.45rem;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
+  line-height: 1.5;
 }
 
 form {
@@ -635,52 +501,6 @@ form {
   margin-bottom: 1.45rem;
 }
 
-noscript {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-
-iframe {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
-
-hr {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: calc(1.45rem - 1px);
-  background: hsla(0, 0%, 0%, 0.2);
-  border: none;
-  height: 1px;
-}
-
-address {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-}
 
 b {
   font-weight: bold;
@@ -739,15 +559,15 @@ li>p {
 }
 
 a {
- font-family: Quicksand,
- -apple-system,
- BlinkMacSystemFont,
- Roboto,
- Oxygen,
- Ubuntu,
- Cantarell,
- Droid Sans,
- sans-serif;
+  font-family: Quicksand,
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   color: #ef4135;
 }
 
@@ -815,14 +635,14 @@ code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: Quicksand,
-  -apple-system,
-  BlinkMacSystemFont,
-  Roboto,
-  Oxygen,
-  Ubuntu,
-  Cantarell,
-  Droid Sans,
-  sans-serif;
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Droid Sans,
+    sans-serif;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -856,6 +676,10 @@ pre tt:after {
 
 .index p {
   color: #8d8d8d;
+}
+
+.social-links li {
+  display: inline-block;
 }
 
 .social-links a,
@@ -921,7 +745,11 @@ pre tt:after {
   background: transparent;
 }
 
-.about, .contact-form, .index, .skills, .scroll {
+.about,
+.contact-form,
+.index,
+.skills,
+.scroll {
   padding-top: 150px;
 }
 
@@ -932,18 +760,16 @@ pre tt:after {
   flex-wrap: wrap;
 }
 
-.about>div,
-.portfolio>div {
-  flex: 1;
-  min-width: 0;
-}
-
 .left {
   margin-right: 1rem;
+  flex: 1;
+  order: 1;
 }
 
 .right {
   margin-left: 1rem;
+  flex: 1;
+  order: 2;
 }
 
 .contact-form em {
@@ -952,35 +778,74 @@ pre tt:after {
   font-size: 25px;
 }
 
-p.effect-shine {
-  color: #ffffff;
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .95) 30%, #000 50%, rgba(0, 0, 0, .95) 70%);
-  mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .95) 30%, #000 50%, rgba(0, 0, 0, .95) 70%);
-  -webkit-mask-size: 200%;
-  mask-size: 200%;
-  animation: shine 2s infinite;
-}
 
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 150%;
-  }
-
-  to {
-    -webkit-mask-position: -50%;
-  }
-}
-
-@keyframes shine {
-  from {
-    mask-position: 150%;
-  }
-
-  to {
-    mask-position: -50%;
-  }
-}
-
-/* .nav li:hover {
-  background: #ef4135;
+/* down arrow */
+/* .arrow {
+  padding: 1rem;
+  box-shadow: 2px -2px #ef4135 inset;
+  transform: rotate(-45deg);
+  opacity: 0;
+  position: absolute;
 } */
+/* .arrows-container {
+  position: absolute;
+  left: 60px;
+  bottom: 120px;
+} */
+
+
+.right-arrow {
+  padding: 1rem;
+  box-shadow: 2px -2px #ef4135 inset;
+  transform: rotate(-135deg);
+  opacity: 0;
+  position: absolute;
+}
+
+.arrow-one {
+  animation: arrowMovement 1.5s ease-in-out infinite;
+}
+
+.arrow-two {
+  animation: arrowMovement 1.5s 1s ease-in-out infinite;
+}
+
+.right-arrow-one {
+  animation: rightArrowMovement 1.5s ease-in-out infinite;
+}
+
+.right-arrow-two {
+  animation: rightArrowMovement 1.5s 1s ease-in-out infinite;
+}
+
+@keyframes arrowMovement {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes rightArrowMovement {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 30px;
+    opacity: 0;
+  }
+}

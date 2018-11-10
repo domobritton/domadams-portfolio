@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "gatsby";
 import Image from "../components/image";
 import Layout from "../components/layout";
 import PageTransition from "gatsby-plugin-page-transitions";
+import styled from "styled-components";
 
 const aboutPage = () => (
   <PageTransition
@@ -48,6 +50,12 @@ const aboutPage = () => (
           <Image />
         </div>
       </div>
+    <div className="right-arrows-container">
+      <Link to="/skills">
+        <div className="right-arrow right-arrow-one" />
+        <div className="right-arrow right-arrow-two" />
+      </Link>
+    </div>
     </Layout>
   </PageTransition>
 );

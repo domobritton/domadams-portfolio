@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { FaPhone } from "react-icons/fa"
 import PageTransition from "gatsby-plugin-page-transitions"
@@ -32,6 +33,9 @@ const contactPage = () => (
         <p>
           <FaPhone /> 415.686.9140
         </p>
+      </div>
+      <div className="home-btn">
+      <Link to="/">Home</Link>
       </div>
     </Layout>
     </PageTransition>
