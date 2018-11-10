@@ -345,7 +345,6 @@ ul {
   padding-bottom: 50px;
   padding-left: 8%;
   padding-right: 12%;
-  border-left: 1px solid rgba(141,141,141,0.4);
   width: 100vw;
   height: 100vh;
 }
@@ -362,6 +361,7 @@ ul {
     right: 0;
     top: 50px;
   }
+
 }
 
 @media all and (max-width: 1024px) {
@@ -376,6 +376,19 @@ ul {
   }
   .layout {
     border-left: none;
+  }
+
+  .left {
+    margin: 0;
+  }
+
+  .right {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .download-btn {
+    margin-bottom: 50px;
   }
 }
 
@@ -397,10 +410,6 @@ ul {
     min-width: 100%;
   }
 
-  .right {
-    padding-top: 50px;
-  }
-
   .right-arrows-container {
     position: absolute;
     right: 100px;
@@ -413,6 +422,17 @@ ul {
   .arrows-container,
   .right-arrows-container {
     visibility: hidden;
+  }
+  .left {
+    margin-right: 1rem;
+    flex: 1;
+    order: 1;
+  }
+
+  .right {
+    margin-left: 1rem;
+    flex: 1;
+    order: 2;
   }
 }
 
@@ -459,6 +479,10 @@ ul {
 
 .nav li:hover a {
   opacity: 0;
+}
+
+.active {
+  color: #8d8d8d;
 }
 
 
@@ -682,6 +706,10 @@ pre tt:after {
   display: inline-block;
 }
 
+.portfolio-links li {
+  display: inline-block;
+}
+
 .social-links a,
 .portfolio-links a {
   margin-right: 1rem;
@@ -697,6 +725,10 @@ pre tt:after {
   color: #ef4135;
   width: 22px;
   height: 22px;
+}
+
+.contact-form a {
+  color: #ffffff;
 }
 
 .social-links a:hover,
@@ -760,17 +792,7 @@ pre tt:after {
   flex-wrap: wrap;
 }
 
-.left {
-  margin-right: 1rem;
-  flex: 1;
-  order: 1;
-}
 
-.right {
-  margin-left: 1rem;
-  flex: 1;
-  order: 2;
-}
 
 .contact-form em {
   color: #ef4135;

@@ -23,22 +23,25 @@ const contactPage = () => (
       <div className="contact-form">
         <h2>Contact Me</h2>
         <p>
-          I am actively seeking new opportunities in the San Francisco Bay Area.
-          <br />
-          I'd love to hear from you.
+          I am actively seeking new front-end developer opportunities in the San Francisco Bay Area.
+          I'd love to connect and learn about your product and culture.
         </p>
         <p>
-          <em>@</em> dom@domadams.me
+          <em>@ </em>
+          <a href="mailto:webmaster@example.com">dom@domadams.me</a>
         </p>
         <p>
           <FaPhone /> 415.686.9140
         </p>
       </div>
-      <div className="home-btn">
-      <Link to="/">Home</Link>
+      <div className="right-arrows-container">
+        <Link to="/">
+          <div className="right-arrow right-arrow-one" />
+          <div className="right-arrow right-arrow-two" />
+        </Link>
       </div>
     </Layout>
-    </PageTransition>
+  </PageTransition>
 );
 
 export default contactPage;

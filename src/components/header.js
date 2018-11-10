@@ -4,25 +4,25 @@ import {
   FaHome, FaUser, FaCog, FaEye, FaEnvelope
 } from "react-icons/fa";
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div className="header">
     <div className="inner-header">
           <ul className="nav">
-          <li id="home-link"
-          data-hover="Home" >
-            <Link to='/'><FaHome /></Link>
+          <li data-hover="Home">
+            <Link to = '/'
+            activeClassName="active"><FaHome /></Link>
           </li>
           <li data-hover="About">
-            <Link to='/about'><FaUser /></Link>
+            <Link to='/about/' activeClassName="active"><FaUser /></Link>
           </li>
           <li data-hover="Skills">
-            <Link to='/skills'><FaCog /></Link>
+            <Link to='/skills/' activeClassName="active"><FaCog /></Link>
           </li>
           <li data-hover="Work">
-            <Link to='/portfolio'><FaEye /></Link> 
+            <Link to='/portfolio/' activeClassName="active"><FaEye /></Link> 
             </li>
             <li data-hover="Email">
-            <Link to='/contact'><FaEnvelope /></Link>
+            <Link to='/contact/' activeClassName="active"><FaEnvelope /></Link>
             </li>
           </ul>
         </div>
