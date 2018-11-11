@@ -9,8 +9,11 @@ import Silent from "../images/silentdisco.gif"
 import Layout from "../components/layout"
 import { FaGithub, FaLink } from "react-icons/fa"
 import PageTransition from "gatsby-plugin-page-transitions"
+import Particles from "../components/particles";
 
 const portfolioPage = () => (
+  <>
+  <Particles />
   <PageTransition
     defaultStyle={{
       transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
@@ -171,6 +174,7 @@ const portfolioPage = () => (
       </div>
   </Layout>
   </PageTransition>
+  </>
 );
 
 export default portfolioPage;

@@ -4,8 +4,11 @@ import Layout from "../components/layout"
 import { FaPhone } from "react-icons/fa"
 import PageTransition from "gatsby-plugin-page-transitions"
 import Map from '../components/map'
+import Particles from "../components/particles";
 
 const contactPage = () => (
+  <>
+  <Particles />
   <PageTransition
     defaultStyle={{
       transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
@@ -48,6 +51,7 @@ const contactPage = () => (
       </div>
     </Layout>
   </PageTransition>
+  </>
 );
 
 export default contactPage;

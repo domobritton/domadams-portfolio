@@ -3,9 +3,10 @@ module.exports = {
     title: 'Domonic Adams',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-page-transitions',
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

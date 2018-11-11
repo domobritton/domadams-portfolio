@@ -4,8 +4,11 @@ import Layout from '../components/layout'
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Code from '../components/code'
+import Particles from "../components/particles";
 
 const IndexPage = () => (
+  <>
+  <Particles />
   <PageTransition
     defaultStyle={{
       transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
@@ -22,6 +25,7 @@ const IndexPage = () => (
   >
     <Layout>
       <div className="code"><Code /></div>
+      <Particles />
       <div className="index">
         <h2>Hi, I'm Domonic.</h2>
         <h3>Full Stack Web Developer.</h3>
@@ -61,6 +65,7 @@ const IndexPage = () => (
       </div>
     </Layout>
   </PageTransition>
+  </>
 );
 
 export default IndexPage
