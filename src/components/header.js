@@ -8,20 +8,20 @@ const Header = () => (
   <div className="header">
     <div className="inner-header">
           <ul className="nav">
-          <li data-hover="Home">
-            <Link to = '/'
-            activeClassName="active"><FaHome /></Link>
+          <li className="outer-link" >
+            <Link to='/'
+            activeClassName="active"><FaHome /></Link >
           </li>
-          <li data-hover="About">
+          <li className="outer-link"  data-hover="About">
             <Link to='/about/' activeClassName="active"><FaUser /></Link>
           </li>
-          <li data-hover="Skills">
+          <li className="outer-link"  data-hover="Skills">
             <Link to='/skills/' activeClassName="active"><FaCog /></Link>
           </li>
-          <li data-hover="Work">
+          <li className="outer-link"  data-hover="Work">
             <Link to='/portfolio/' activeClassName="active"><FaEye /></Link> 
             </li>
-            <li data-hover="Email">
+            <li className="outer-link" data-hover="Email">
             <Link to='/contact/' activeClassName="active"><FaEnvelope /></Link>
             </li>
           </ul>

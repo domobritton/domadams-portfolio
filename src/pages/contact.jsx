@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { FaPhone } from "react-icons/fa"
 import PageTransition from "gatsby-plugin-page-transitions"
+import Map from '../components/map'
 
 const contactPage = () => (
   <PageTransition
     defaultStyle={{
-      transition: "left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)",
+      transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
       left: "100%",
       position: "absolute",
       width: "100%"
@@ -17,13 +18,18 @@ const contactPage = () => (
       entered: { left: "0%" },
       exiting: { left: "100%" }
     }}
-    transitionTime={500}
+    transitionTime={1000}
   >
     <Layout>
-      <div className="contact-form">
+      <div className="map">
+        <Map />
+      </div>
+      <div className="contact">
         <h2>Contact Me</h2>
         <p>
-          I am actively seeking new front-end developer opportunities in the San Francisco Bay Area.
+          I am actively seeking new front-end developer opportunities in the San
+          Francisco Bay Area.
+          <br />
           I'd love to connect and learn about your product and culture.
         </p>
         <p>

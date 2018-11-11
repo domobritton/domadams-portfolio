@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "gatsby"
 import Layout from "../components/layout";
 import PageTransition from "gatsby-plugin-page-transitions";
+import Code from '../components/code'
 
 const skillsPage = () => (
   <PageTransition
     defaultStyle={{
-      transition: "left 500ms cubic-bezier(0.47, 0, 0.75, 0.72)",
+      transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
       left: "100%",
       position: "absolute",
       width: "100%"
@@ -16,9 +17,10 @@ const skillsPage = () => (
       entered: { left: "0%" },
       exiting: { left: "100%" }
     }}
-    transitionTime={500}
+    transitionTime={1000}
   >
   <Layout>
+      <div className="code"><Code /></div>
     <div className="skills">
       <h2>Skills & Experience</h2>
       <p>
@@ -64,15 +66,6 @@ const skillsPage = () => (
         </a>{" "}
         directly.
       </p>
-      <div className="download-btn">
-        <a
-          href="../images/domadams-profile.jpg"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download My Resume
-        </a>
-      </div>
     </div>
       <div className="right-arrows-container">
         <Link to="/portfolio">
