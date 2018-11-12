@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-page-transitions`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     {
@@ -43,10 +42,6 @@ module.exports = {
           {
             family: `Open Sans`,
             variants: [`400`, `700`]
-          },
-          {
-            family: `Alberta Stencil`,
-            subsets: [`latin`],
           },
         ],
       },

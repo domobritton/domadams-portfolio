@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { FaGithub, FaLinkedin } from "react-icons/fa"
-import PageTransition from 'gatsby-plugin-page-transitions'
+// import PageTransition from 'gatsby-plugin-page-transitions'
 import Code from '../components/code'
 import Particles from "../components/particles";
 

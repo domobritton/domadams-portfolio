@@ -2,14 +2,14 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { FaPhone } from "react-icons/fa"
-import PageTransition from "gatsby-plugin-page-transitions"
+// import PageTransition from "gatsby-plugin-page-transitions"
 import Map from '../components/map'
 import Particles from "../components/particles";
 
 const contactPage = () => (
   <>
   <Particles />
-  <PageTransition
+  {/* <PageTransition
     defaultStyle={{
       transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
       left: "100%",
@@ -22,7 +22,7 @@ const contactPage = () => (
       exiting: { left: "100%" }
     }}
     transitionTime={1000}
-  >
+  > */}
     <Layout>
       <div className="map">
         <Map />
@@ -50,7 +50,7 @@ const contactPage = () => (
         </Link>
       </div>
     </Layout>
-  </PageTransition>
+  {/* </PageTransition> */}
   </>
 );
 

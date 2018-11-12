@@ -8,13 +8,13 @@ import Seismic from "../images/seismic.gif";
 import Silent from "../images/silentdisco.gif";
 import Layout from "../components/layout";
 import { FaGithub, FaLink, FaCode } from "react-icons/fa";
-import PageTransition from "gatsby-plugin-page-transitions";
+// import PageTransition from "gatsby-plugin-page-transitions";
 import Particles from "../components/particles";
 
 const portfolioPage = () => (
   <>
     <Particles />
-    <PageTransition
+    {/* <PageTransition
       defaultStyle={{
         transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
         left: "100%",
@@ -27,7 +27,7 @@ const portfolioPage = () => (
         exiting: { left: "100%" }
       }}
       transitionTime={1000}
-    >
+    > */}
       <Layout>
         <div className="scroll-text">
           <p>
@@ -257,7 +257,7 @@ const portfolioPage = () => (
           </Link>
         </div>
       </Layout>
-    </PageTransition>
+    {/* </PageTransition> */}
   </>
 );
 
