@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import PageTransition from "gatsby-plugin-page-transitions";
 import Code from '../components/code'
 import Particles from "../components/particles";
+import WordCloud from "../components/wordcloud"
 
 const skillsPage = () => (
   <>
@@ -27,23 +28,16 @@ const skillsPage = () => (
     <div className="skills">
       <h2>Skills & Experience</h2>
       <p>
-        Javascript, Typescript, jQuery, React, Redux, Node js, Express js,
-        MongoDB, Ruby, Ruby on Rails, Rspec, Jasmine, WordPress, SQL, AWS,
-        HTML5, CSS3, Docker, Git.
-      </p>
-      <p>
-        I have many years experience as a front-end developer and WordPress,
-        creating responsive websites of a high quality.
-      </p>
-      <p>
-        In my experience as a freelancer and working for agencies I have also
-        obtained an eye for detail and appreciation for design, knowledge of
+        In my experience as a freelancer, and working for agencies, I have
+        obtained an eye for detail and appreciation for great design. I also have experience
         integrating with and developing server-side, as well as knowing how to
         efficiently project manage and work with clients and colleagues
         successfully.
       </p>
+      <div className="skills-flex">
+    <div className="left">
       <p>
-        I now specialise in front-end development but my knowledge of multiple
+        I now specialise in front-end development, but my knowledge of multiple
         fields allows me to work on a project with the full scope in mind;
         simplifying the process of our working together and producing a more
         cohesive experience for your users.
@@ -69,12 +63,17 @@ const skillsPage = () => (
         </a>{" "}
         directly.
       </p>
+      </div>
+      <div className="right">
+      <WordCloud />
+      </div>
     </div>
       <div className="right-arrows-container">
         <Link to="/portfolio">
           <div className="right-arrow right-arrow-one" />
           <div className="right-arrow right-arrow-two" />
         </Link>
+          </div>
       </div>
   </Layout>
   </PageTransition>

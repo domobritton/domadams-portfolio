@@ -38,10 +38,15 @@ module.exports = {
         fonts: [{
             family: `Quicksand`,
             subsets: [`latin`],
+            variants: [`400`, `700`]
           },
           {
             family: `Open Sans`,
             variants: [`400`, `700`]
+          },
+          {
+            family: `Alberta Stencil`,
+            subsets: [`latin`],
           },
         ],
       },

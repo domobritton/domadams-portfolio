@@ -8,21 +8,6 @@ import Particles from "../components/particles";
 
 const IndexPage = () => (
   <>
-  <Particles />
-  <PageTransition
-    defaultStyle={{
-      transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
-      left: "100%",
-      position: "absolute",
-      width: "100%"
-    }}
-    transitionStyles={{
-      entering: { left: "0%" },
-      entered: { left: "0%" },
-      exiting: { left: "100%" }
-    }}
-    transitionTime={1000}
-  >
     <Layout>
       <div className="code"><Code /></div>
       <Particles />
@@ -64,7 +49,6 @@ const IndexPage = () => (
         </Link>
       </div>
     </Layout>
-  </PageTransition>
   </>
 );
 

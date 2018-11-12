@@ -31,7 +31,7 @@ const aboutPage = () => (
       <div className="about">
         <div className="left">
           <h2>About Me</h2>
-          <p className="effect-shine">
+          <p>
             I thrive at the intersection of creativity and tech innovation—
             contributing ideas that are not often explored and are outside the
             box to add value to any project. My skills are broad: from ux to
@@ -45,7 +45,7 @@ const aboutPage = () => (
           </p>
           <div className="download-btn">
             <a
-              href="../images/domadams-profile.jpg"
+              href="https://drive.google.com/file/d/1zXCDOc7GPU-3GmhqvwYTeqoWnX7P04yW/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
