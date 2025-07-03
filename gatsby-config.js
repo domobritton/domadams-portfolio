@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Domonic Adams',
+    siteUrl: 'https://domonic-adams.com',
+    description: 'Software Developer Portfolio',
   },
   plugins: [
     'gatsby-plugin-styled-components',
