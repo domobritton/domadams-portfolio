@@ -1,31 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import { FaPhone } from "react-icons/fa"
-// import PageTransition from "gatsby-plugin-page-transitions"
-import Map from '../components/map'
-import Particles from "../components/particles";
+import React from 'react'
+import { Link } from 'gatsby'
+import Layout from '../components/layout'
+import { FaPhone } from 'react-icons/fa'
+import Particles from '../components/particles'
+import MapImage from '../components/mapImage'
 
 const contactPage = () => (
   <>
-  <Particles />
-  {/* <PageTransition
-    defaultStyle={{
-      transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
-      left: "100%",
-      position: "absolute",
-      width: "100%"
-    }}
-    transitionStyles={{
-      entering: { left: "0%" },
-      entered: { left: "0%" },
-      exiting: { left: "100%" }
-    }}
-    transitionTime={1000}
-  > */}
+    <Particles />
     <Layout>
       <div className="map">
-        <Map />
+        <MapImage />
       </div>
       <div className="contact">
         <h2>Contact Me</h2>
@@ -50,8 +35,7 @@ const contactPage = () => (
         </Link>
       </div>
     </Layout>
-  {/* </PageTransition> */}
   </>
-);
+)
 
-export default contactPage;
+export default contactPage

@@ -1,32 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import Image from "../components/image";
-import Layout from "../components/layout";
-// import PageTransition from "gatsby-plugin-page-transitions";
-import styled from "styled-components";
-import Code from '../components/code'
-import Particles from "../components/particles";
+import React from 'react'
+import { Link } from 'gatsby'
+import ProfileImage from '../components/profileImage'
+import Layout from '../components/layout'
+import CodeImage from '../components/codeImage'
+import Particles from '../components/particles'
 
 const aboutPage = () => (
   <>
-  <Particles />
-  {/* <PageTransition
-    defaultStyle={{
-      transition: "left 1000ms cubic-bezier(0.47, 0, 0.75, 0.72)",
-      left: "100%",
-      position: "absolute",
-      width: "100%"
-    }}
-    transitionStyles={{
-      entering: { left: "0%" },
-      entered: { left: "0%" },
-      exiting: { left: "100%" }
-    }}
-    transitionTime={1000}
-  > */}
+    <Particles />
     <Layout>
       <div className="code">
-        <Code />
+        <CodeImage />
       </div>
       <div className="about">
         <div className="left">
@@ -54,7 +38,7 @@ const aboutPage = () => (
           </div>
         </div>
         <div className="right">
-          <Image />
+          <ProfileImage />
         </div>
       </div>
       <div className="right-arrows-container">
@@ -64,8 +48,7 @@ const aboutPage = () => (
         </Link>
       </div>
     </Layout>
-  {/* </PageTransition> */}
   </>
-);
+)
 
-export default aboutPage;
+export default aboutPage

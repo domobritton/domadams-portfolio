@@ -25,8 +25,8 @@ a:hover {
 }
 
 h1 {
-  font-size: .75em;
-  margin: .67em 0;
+  font-size: 0.75em;
+  margin: 0.67em 0;
 }
 
 img {
@@ -61,10 +61,10 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
 img {
@@ -89,15 +89,8 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.25rem;
@@ -114,9 +107,10 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: 400;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   text-rendering: optimizeLegibility;
   font-size: 2.62671rem;
   line-height: 1.1;
@@ -133,17 +127,10 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: 400;
-  letter-spacing: .20rem;
+  letter-spacing: 0.2rem;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
@@ -160,15 +147,8 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -185,15 +165,8 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -210,15 +183,8 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -252,7 +218,8 @@ ul {
   .layout {
     margin: 0 auto;
     max-width: 100%;
-    padding-bottom: 50px;
+    height: auto;
+    min-height: 100svh;
   }
 
   .right-arrows-container {
@@ -260,7 +227,6 @@ ul {
     right: 0;
     top: 50px;
   }
-
 }
 
 @media all and (max-width: 1024px) {
@@ -306,7 +272,6 @@ ul {
 }
 
 @media all and (max-width: 860px) {
-
   .left,
   .right {
     flex: 1;
@@ -321,7 +286,6 @@ ul {
 }
 
 @media all and (min-width: 1025px) {
-
   .right-arrows-container {
     position: absolute;
     right: 150px;
@@ -359,10 +323,10 @@ ul {
   transform: rotate(-90deg);
 }
 
-.scroll-text svg, .scroll-text p {
+.scroll-text svg,
+.scroll-text p {
   color: #8d8d8d;
-  font-family: 'Allerta Stencil',
-  sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
   font-size: 18px;
 }
 
@@ -372,7 +336,6 @@ ul {
   margin-right: 5px;
   margin-left: 5px;
 }
-
 
 a {
   text-decoration: none;
@@ -387,17 +350,10 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   color: #ffffff;
   line-height: 1.5;
 }
@@ -412,7 +368,6 @@ form {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-
 
 b {
   font-weight: bold;
@@ -432,6 +387,12 @@ th {
 
 li {
   margin-bottom: calc(1.45rem / 2);
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.5;
 }
 
 ol li {
@@ -442,13 +403,13 @@ ul li {
   padding-left: 0;
 }
 
-li>ol {
+li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 
-li>ul {
+li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
@@ -466,20 +427,13 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li>p {
+li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 
 a {
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   color: #ef4135;
 }
 
@@ -522,10 +476,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -546,15 +500,8 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: Quicksand,
-    -apple-system,
-    BlinkMacSystemFont,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Droid Sans,
-    sans-serif;
+  font-family: Quicksand, -apple-system, BlinkMacSystemFont, Roboto, Oxygen,
+    Ubuntu, Cantarell, Droid Sans, sans-serif;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -570,14 +517,14 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 
 @media only screen and (max-width: 480px) {
@@ -610,7 +557,7 @@ pre tt:after {
 }
 
 .contact svg {
-  color: #ABF3F8;
+  color: #abf3f8;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -620,7 +567,6 @@ pre tt:after {
 .portfolio-links a:hover {
   color: #ef4135;
 }
-
 
 .contact-btn {
   width: 140px;
@@ -634,7 +580,7 @@ pre tt:after {
 .download-btn {
   width: 230px;
   padding: 8px 15px;
-  border: 1px solid #78C4C4;
+  border: 1px solid #78c4c4;
   border-radius: 3px;
   text-align: center;
   cursor: pointer;
@@ -644,7 +590,7 @@ pre tt:after {
   font-size: 1rem;
 }
 .download-btn a {
-  color: #78C4C4;
+  color: #78c4c4;
   font-size: 1rem;
 }
 
@@ -667,26 +613,22 @@ pre tt:after {
 .about,
 .index,
 .skills,
-.scroll, 
+.scroll,
 .contact {
   padding-top: 150px;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 100vw;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100vw;
 }
-
-// .about, .index, .skills, .scroll {
-//   height: 100vh;
-// }
 
 @media all and (max-width: 1024px) {
   .about {
     height: 100%;
   }
   .skills {
-    height: 100%;
+    height: 100svh;
   }
 }
 
@@ -700,7 +642,7 @@ pre tt:after {
 }
 
 .contact {
-    height: 100vh;
+  height: 100vh;
 }
 
 .index {
@@ -716,22 +658,23 @@ pre tt:after {
 }
 
 .skills h2 {
-  color: #2b363F;
+  color: #2b363f;
 }
 
 .skills a {
-  color: #2b363F;
+  color: #2b363f;
 }
 
 .scroll {
-  background: #2b363F;
+  background: #2b363f;
 }
 
 .contact {
   background: rgba(43, 69, 92, 0.97);
 }
 
-.map, .code {
+.map,
+.code {
   position: absolute;
   top: 0;
   left: 0;
@@ -742,17 +685,18 @@ pre tt:after {
 }
 
 @media all and (max-width: 940px) {
-  .map, .code {
+  .map,
+  .code {
     visibility: hidden;
   }
 }
 
 .about h2 {
-  color: #78C4C4;
+  color: #78c4c4;
 }
 
 .contact h2 {
-  color: #ABF3F8;
+  color: #abf3f8;
 }
 
 .contact p a {
@@ -776,11 +720,10 @@ pre tt:after {
 }
 
 .contact em {
-  color: #ABF3F8;
+  color: #abf3f8;
   margin-right: 5px;
   font-size: 20px;
 }
-
 
 .right-arrow {
   padding: 1rem;
@@ -822,22 +765,29 @@ pre tt:after {
 @for $i from 1 through 30 {
   @keyframes particle-animation-#{$i} {
     100% {
-      transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+      transform: translate3d(
+        calc(random(90) * 1vw),
+        calc(random(90) * 1vh),
+        calc(random(100) * 1px)
+      );
     }
   }
 
   .particle:nth-child(#{$i}) {
     animation: particle-animation-#{$i} 60s infinite;
-    $size: random(5) + 5 + px;
-    opacity: random(100)/100;
+    $size: calc(random(5) + 5) + px;
+    opacity: calc(random(100) / 100);
     height: $size;
     width: $size;
-    animation-delay: -$i * .2s;
-    transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-    background: hsl(random(360), 70%, 30%);
+    animation-delay: -$i * 0.2s;
+    transform: translate3d(
+      calc(random(90) * 1vw),
+      calc(random(90) * 1vh),
+      calc(random(100) * 1px)
+    );
+    background: hsl(calc(random(360)), 70%, 30%);
   }
 }
-
 
 svg text.blink {
   animation: blink 2s ease-out;
@@ -852,10 +802,10 @@ svg text.blink {
 
 @media all and (max-width: 1260px) {
   #tagi {
-      position: absolute;
-      bottom: 0;
-      right: 10%;
-      width: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 40%;
   }
 }
 
@@ -866,16 +816,15 @@ svg text.blink {
 
   20% {
     fill: rgba(226, 25, 45, 1);
-    text-shadow: -5px -5px 20px rgba(226, 25, 45, 0.8), 5px -5px 20px rgba(226, 25, 45, 0.8), 5px 5px 20px rgba(226, 25, 45, 0.8), -5px 5px 20px rgba(226, 25, 45, 0.8);
-    ;
+    text-shadow: -5px -5px 20px rgba(226, 25, 45, 0.8),
+      5px -5px 20px rgba(226, 25, 45, 0.8), 5px 5px 20px rgba(226, 25, 45, 0.8),
+      -5px 5px 20px rgba(226, 25, 45, 0.8);
   }
 
   30% {
-    fill: rgba(226, 25, 45, 1)
-    -5px -5px 20px rgba(226, 25, 45, 0.8),
-    5px -5px 20px rgba(226, 25, 45, 0.8),
-    5px 5px 20px rgba(226, 25, 45, 0.8),
-    -5px 5px 20px rgba(226, 25, 45, 0.8);
+    fill: rgba(226, 25, 45, 1) -5px -5px 20px rgba(226, 25, 45, 0.8),
+      5px -5px 20px rgba(226, 25, 45, 0.8), 5px 5px 20px rgba(226, 25, 45, 0.8),
+      -5px 5px 20px rgba(226, 25, 45, 0.8);
   }
 
   100% {
